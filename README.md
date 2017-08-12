@@ -23,10 +23,10 @@ A couple of observations are worth minding:
 - I could have used [classnames](https://github.com/JedWatson/classnames) in React but that would probably not change much codewise.
 
 Lines of code (main `.js` file) for each solution (excluding comments):
-- jQuery (65)
-- Meteor (91)
-- React (173)
-- React/Redux (203)
+- jQuery [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/jquery-app/public/index.js) (65)
+- Meteor [main.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/meteor-app/client/main.js) (91)
+- React [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-app/src/index.js) (173)
+- React/Redux [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-redux-app/src/index.js) (203)
 
 ### Running each app
 You'll need to have Node and Meteor installed to run all apps:
