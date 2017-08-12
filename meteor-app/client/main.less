@@ -1,0 +1,127 @@
+body {
+	background-color: #2AA2D5 !important;
+	text-align: center;
+}
+
+/* ========================================================================= */
+/* PROGRESS BAR */
+/* ========================================================================= */
+// Customize shape
+@bubbles: 4;
+@bubble-size: 40px;
+@bubble-spacing: 60px;
+@progress-height: 10px;
+@progress-fill-fix: 1px;
+// Customize effects
+@progress-fill-time: 0.2s;
+@bubble-fill-time: 0.2s;
+// Automatically calculated (do not change)
+@progress-size: (@bubbles - 1) * @bubble-size + (@bubbles - 1) * @bubble-spacing;
+@progress-effect: all @progress-fill-time ease-in-out;
+@bubble-effect: all @bubble-fill-time ease-in-out;
+
+#progress-bar-wrap {
+	position: relative;
+	margin: (@bubble-size + 10) auto;
+	width: @progress-size + @bubble-size;
+}
+#progress-bar {
+	position: relative;
+	top: @progress-height;
+	left: @bubble-size / 2;
+	height: @progress-height;
+	width: @progress-size;
+	background-color: white;
+}
+
+/* BUBBLES FOR EACH STEP */
+.bubble-wrap {
+	position: absolute;
+	height: @bubble-size;
+	width: @bubble-size;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: -(@bubble-size - @progress-height) / 2;
+}
+.bubble {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: white;
+}
+.bubble.active {
+	background-color: #00C4F7;
+	/* transition effects */
+	transition: @bubble-effect;
+  -webkit-transition: @bubble-effect;
+  -moz-transition: @bubble-effect;
+  /* transition effects delay: wait for progress bar to fill */
+  transition-delay: @progress-fill-time;
+  -webkit-transition-delay: @progress-fill-time;
+  -moz-transition-delay: @progress-fill-time;
+}
+#bubble-1 {
+	left: 0 * (@bubble-size + @bubble-spacing);
+}
+#bubble-2 {
+	left: 1 * (@bubble-size + @bubble-spacing);
+}
+#bubble-3 {
+	left: 2 * (@bubble-size + @bubble-spacing);
+}
+#bubble-4 {
+	left: 3 * (@bubble-size + @bubble-spacing);
+}
+
+/* STEP COMPLETION PERCENTAGE (0% - 100%) */
+.step-percentage-wrap {
+	position: absolute;
+	width: @bubble-spacing + 2 * @progress-fill-fix;
+}
+.step-percentage {
+	position: absolute;
+	background-color: #00C4F7;
+	height: @progress-height;
+	margin-left: -@progress-fill-fix;
+	width: 0%;
+	/* transition effects */
+	transition: @progress-effect;
+  -webkit-transition: @progress-effect;
+  -moz-transition: @progress-effect;
+}
+#step-percentage-1 {
+	left: @bubble-size + 0 * (@bubble-size + @bubble-spacing);
+}
+#step-percentage-2 {
+	left: @bubble-size + 1 * (@bubble-size + @bubble-spacing);
+}
+#step-percentage-3 {
+	left: @bubble-size + 2 * (@bubble-size + @bubble-spacing);
+}
+
+/* ========================================================================= */
+/* BUTTONS AND SLIDER*/
+/* ========================================================================= */
+.step-button {
+  margin: 10px 2px;
+  height: 40px;
+  width: 75px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.range-slider {
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+	cursor: pointer;
+}
+
+/* ========================================================================= */
+/* GENERAL */
+/* ========================================================================= */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Progress bar (Meteor)</title>
+</head>
+
+<body>
+  {{> progressBar}}
+</body>
+
+<template name="progressBar">
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar-wrap">
+    <div id="progress-bar"></div>
+    <div class="bubble-wrap">
+      <div id="bubble-1" class="bubble {{isActiveStep 1}}"></div>
+      <div id="bubble-2" class="bubble {{isActiveStep 2}}"></div>
+      <div id="bubble-3" class="bubble {{isActiveStep 3}}"></div>
+      <div id="bubble-4" class="bubble {{isActiveStep 4}}"></div>
+    </div>
+    <div class="step-percentage-wrap">
+      <div id="step-percentage-1" class="step-percentage" style="width: {{stepPercentage 1}}%"></div>
+      <div id="step-percentage-2" class="step-percentage" style="width: {{stepPercentage 2}}%"></div>
+      <div id="step-percentage-3" class="step-percentage" style="width: {{stepPercentage 3}}%"></div>
+    </div>
+  </div>
+
+  <!-- BUTTONS AND SLIDER -->
+  <button class="step-button first-step-button" disabled={{isDisabledButton "decrease"}}>First</button>
+  <button class="step-button previous-step-button" disabled={{isDisabledButton "decrease"}}>Prev</button>
+  <button class="step-button next-step-button" disabled={{isDisabledButton "increase"}}>Next</button>
+  <button class="step-button last-step-button" disabled={{isDisabledButton "increase"}}>Last</button>
+  <input type="range" class="range-slider" min="0" max="100" step="25" value={{percentage}}>
+
+</template>
