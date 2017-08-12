@@ -2,7 +2,7 @@
 // Multi step progress bar Component
 // ============================================================================
 (function Component() {
-	// Definitions
+  // Definitions
   const NUMBER_OF_STEPS = 4;
 
   // ----------------------------------------------

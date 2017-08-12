@@ -1,43 +1,43 @@
 body {
-	background-color: #2AA2D5 !important;
-	text-align: center;
+  background-color: #2AA2D5 !important;
+  text-align: center;
 }
 
 /* PROGRESS BAR */
 #progress-bar-wrap {
-	position: relative;
-	margin: 50px auto;
-	width: 340px;
+  position: relative;
+  margin: 50px auto;
+  width: 340px;
 }
 #progress-bar {
-	position: relative;
-	top: 10px;
-	left: 20px;
-	height: 10px;
-	width: 300px;
-	background-color: white;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  height: 10px;
+  width: 300px;
+  background-color: white;
 }
 
 /* BUBBLES FOR EACH STEP*/
 .bubble-wrap {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	background-color: white;
-	border-radius: 50%;
-	margin-top: -15px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -15px;
 }
 .bubble {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	border-radius: 50%;
-	background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
 }
 .bubble.active {
-	background-color: #00C4F7;
-	/* transition effects */
-	transition: all 0.1s ease-in-out;
+  background-color: #00C4F7;
+  /* transition effects */
+  transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   /* transition effects delay */
@@ -46,42 +46,42 @@ body {
   -moz-transition-delay: 0.2s;
 }
 #bubble-1 {
-	left: 0;
+  left: 0;
 }
 #bubble-2 {
-	left: 100px;
+  left: 100px;
 }
 #bubble-3 {
-	left: 200px;
+  left: 200px;
 }
 #bubble-4 {
-	left: 300px;
+  left: 300px;
 }
 
 /* STEP COMPLETION PERCENTAGE 0 - 100% */
 .step-percentage-wrap {
-	position: absolute;
-	width: 62px;
+  position: absolute;
+  width: 62px;
 }
 .step-percentage {
-	position: absolute;
-	background-color: #00C4F7;
-	margin-left: -1px;
-	height: 10px;
-	width: 0%;
-	/* transition effects */
-	transition: all 0.2s ease-in-out;
+  position: absolute;
+  background-color: #00C4F7;
+  margin-left: -1px;
+  height: 10px;
+  width: 0%;
+  /* transition effects */
+  transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
 }
 #step-percentage-1 {
-	left: 40px;
+  left: 40px;
 }
 #step-percentage-2 {
-	left: 140px;
+  left: 140px;
 }
 #step-percentage-3 {
-	left: 240px;
+  left: 240px;
 }
 
 /* ========================================================================= */
@@ -97,8 +97,8 @@ body {
 }
 
 .slider-wrap {
-	margin: 25px auto;
-	width: 300px;
+  margin: 25px auto;
+  width: 300px;
 }
 
 /* ========================================================================= */
