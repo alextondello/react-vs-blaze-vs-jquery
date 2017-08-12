@@ -23,34 +23,34 @@ A couple of observations are worth minding:
 - I could have used [classnames](https://github.com/JedWatson/classnames) in React but that would probably not change much codewise.
 
 Lines of code (main `.js` file) for each solution (excluding comments):
-- jQuery [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/jquery-app/public/index.js) (65)
-- Meteor [main.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/meteor-app/client/main.js) (91)
-- React [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-app/src/index.js) (173)
-- React/Redux [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-redux-app/src/index.js) (203)
+- jQuery (65) -> [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/jquery-app/public/index.js)
+- Meteor (91) -> [main.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/meteor-app/client/main.js)
+- React (173) -> [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-app/src/index.js)
+- Redux (203) -> [index.js](https://github.com/alextondello/react-vs-blaze-vs-jquery/blob/master/react-redux-app/src/index.js)
 
 ### Running each app
 You'll need to have Node and Meteor installed to run all apps:
 - https://nodejs.org/en/download
 - https://www.meteor.com/install
 
-#### jQuery
+#### jQuery app
 - cd jquery-app
 - npm install
 - npm start
 
-#### Meteor
+#### Meteor app
 - cd meteor-app
 - meteor npm install
 - meteor
 
-#### React
+#### React app
 - cd react-app
 - npm install
 - npm start
 
-#### React + Redux
+#### Redux app
 - cd react-redux-app
 - npm install
 - npm start
 
-Visit http://localhost:3000/ to see the app running.
+Visit http://localhost:3000 to see the app running.
